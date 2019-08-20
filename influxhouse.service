@@ -1,0 +1,17 @@
+[Unit]
+Description=influxhouse
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/opt/influxhouse
+ExecStart=/usr/bin/node influxhouse.js
+
+Restart=always
+RestartSec=10
+
+MemoryLimit=200M
+MemoryAccounting=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+{
+  "host": "0.0.0.0",
+  "port": 8089,
+  "timer": 1,
+  "clickhouse": {
+    "url": "http:\/\/127.0.0.1:8123?user=default",
+    "db": "telegraf"
+  }
+}
